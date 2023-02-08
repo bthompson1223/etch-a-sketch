@@ -1,5 +1,26 @@
-div {
-    display: flex;
-    margin: 0;
-    border: solid black 1px
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
 }
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    max-width: 560px;
+    max-height: 560px;
+    margin: 0
+}
+
+.pixel {
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+    width: 5px;
+    height: 10px;
+    margin: 0;
+}
+
+
+
