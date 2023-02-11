@@ -45,7 +45,7 @@ function makeStartSquare(gridSize) {
 function getInput() {
     let input = window.prompt("Please enter grid size. Size must be between 1 and 100.");
 
-    while (isNaN(input) || input < 1 || input > 100) {
+    while (isNaN(input) || input < 1 || input > 100 || Math.floor(input) != input) {
         input = window.prompt("Sorry, that isn't a valid choice. Please choose a number between 1 and 100.")
     }
 
